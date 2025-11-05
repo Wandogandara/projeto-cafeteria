@@ -1,0 +1,105 @@
+
+
+Sobre nós
+Café com paixão
+Começamos esta cafetaria com uma visão clara - compartilhar o nosso amor verdadeiro por café. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore.
+
+Veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit qui.
+
+
+Architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui.
+
+Ea commodi consequatur quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat.
+
+Conheça nossa equipa
+A nossa cafetaria tem uma ótima equipa que compartilha o amor por um bom café. Vamos fazê-lo sentir em casa.
+
+Tiago Santos
+Proprietário / Gestor
+Número de telefone: 226 106 312
+E-mail: tiago@example.com
+
+
+Maria Cardoso
+Empregada de balcão
+Número de telefone: 258 241 824
+E-mail: maria@example.com
+
+
+
+
+
+O nosso menu
+Café
+Espresso
+Porro quisquam est qui dolorem ipsum
+
+1.50€
+Café latte
+Et dolore magnam aliquam quaerat voluptatem
+
+10€
+Cappuccino
+Ex ea commodi consequatur quis autem
+
+10€
+Café com gelo
+Porro quisquam est qui dolorem ipsum
+
+10€
+Bebidas
+Água
+Porro quisquam est qui dolorem ipsum
+
+1.50€
+Cerveja
+Et dolore magnam aliquam quaerat voluptatem
+
+10€
+Vinho branco
+Ex ea commodi consequatur quis autem
+
+10€
+Sobremesas
+Pastel de nata
+Porro quisquam est qui dolorem ipsum
+
+1.50€
+Cheesecake com creme de framboesa
+Et dolore magnam aliquam quaerat voluptatem
+
+10€
+Torta de maçã com gelado
+Ex ea commodi consequatur quis autem
+
+
+
+
+
+
+
+ <section id="O nosso menu">
+        <h2>È hora do café</h2>
+        <details>
+        <div>
+            <ol>
+                <li>Espresso
+                    Porro quisquam est qui dolorem ipsum
+
+                    1.50€</li>
+                <li>Café latte
+                    Et dolore magnam aliquam quaerat voluptatem
+
+                    10€</li>
+                <li>Café latte
+                    Et dolore magnam aliquam quaerat voluptatem
+
+                    10€</li>
+                <li>Pastel de nata
+                    Porro quisquam est qui dolorem ipsum
+
+                    10€</li>
+            </ol>
+        </div>
+        </details>
+    </section>
