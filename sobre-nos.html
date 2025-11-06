@@ -26,7 +26,8 @@
         }
 
         body {
-            padding-top: 40vh; /* Para compensar o header fixo */
+            padding-top: 40vh;
+            /* Para compensar o header fixo */
         }
 
         header {
@@ -34,7 +35,7 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            min-height: 40vh;
+            min-height: 30vh;
             position: fixed;
             top: 0;
             left: 0;
@@ -45,6 +46,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            box-shadow: rgb(10, 10, 10) 0px 0px 15px;
         }
 
         nav {
@@ -104,52 +106,111 @@
             font-size: 2.5rem;
         }
 
-        h2{
+        h2 {
             color: var(--primary-color);
             text-align: center;
             font-size: 2.0rem;
             padding: 10px;
             font-family: serif;
         }
-        .sobre-section p{
+
+
+
+        .sobre-section p {
             border: 4px solid var(--accent-color);
             border-radius: 20px;
             padding: 20px;
         }
 
-        .sobre-section div p{
+        .sobre-section div p {
             display: flex;
             text-align: center;
-            margin: 20px; 
+            margin: 20px;
         }
 
-        .imagem{
-           margin: 50px;
+        .imagem {
+            margin: 50px;
             align-items: center;
             justify-content: center;
             display: flex;
         }
 
-        .imagem img{
+        .imagem img {
             border-radius: 20px;
-            width: 50%;
-           
+            width: 80%;
         }
 
+        .sobre-equipe {
+            display: block;
+            padding: 15px;
+            margin: 15px;
+        }
 
+        .paragrafo-equipe {
+            text-align: center;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .div-equipe {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        .div-equipe img {
+            border-radius: 50px;
+            width: 250px;
+            height: 250px;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .descicao-equipe {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .descicao-equipe h6{
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        .descicao-equipe p {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        footer{
+            padding: 15px;
+            
+            background-color: var(--text-color);
+            color: var(--white);
+            width: 100%;
+            height: 100px;
+        }
+        footer p{
+            padding-top: 25px;
+            text-align: center;
+
+
+        }
     </style>
 </head>
 
 <body>
     <header class="hero-header">
         <nav>
-            <div class="logo">Cafetaria do Wando</div>
+            <div class="logo">Cafeteria do Wando</div>
             <ul class="nav-links">
                 <li><a href="inicio.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="menu.html">O nosso menu</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                
+
             </ul>
             <div class="menu-toggle">☰</div>
         </nav>
@@ -160,55 +221,65 @@
 
 </html>
 
-    <section id="Sobre Nós" class="sobre-section">
-        <h2>Café com paixão</h2>
-        <div>
-            <p>
-                Café com paixão
-                Começamos esta cafetaria com uma visão clara - compartilhar o nosso amor verdadeiro por café. Neque
-                porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam
-                eius modi tempora incidunt ut labore et dolore. <br>
+<section id="Sobre Nós" class="sobre-section">
+    <h2>Café com paixão</h2>
+    <div>
+        <p>
+            Café com paixão
+            Começamos esta cafetaria com uma visão clara - compartilhar o nosso amor verdadeiro por café. Neque
+            porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam
+            eius modi tempora incidunt ut labore et dolore. <br>
 
-                Veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi
-                consequatur quis autem vel eum iure reprehenderit qui. <br>
-
-
-                Architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                odit aut fugit sed quia consequuntur magni dolores eos qui. <br>
-
-                Ea commodi consequatur quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur vel illum qui dolorem eum fugiat.</p>
-
-        </div>
-
-        <div class="imagem">
-            <img src="imagem/imagem cafeteria2.jpeg" alt="">
-        </div>
-
-    </section>
+            Veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi
+            consequatur quis autem vel eum iure reprehenderit qui. <br>
 
 
-    <section class="sobre-equipe">
-        <h2>Conheça nossa equipa</h2>
-        <p>A nossa cafetaria tem uma ótima equipa que compartilha o amor por um bom café. Vamos fazê-lo sentir em casa.
-        </p>
+            Architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+            odit aut fugit sed quia consequuntur magni dolores eos qui. <br>
 
-        <div>
-            <img src="" alt="imagem-funcinario">
+            Ea commodi consequatur quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+            molestiae consequatur vel illum qui dolorem eum fugiat.</p>
+
+    </div>
+
+    <div class="imagem">
+        <img src="imagem/imagem cafeteria2.jpeg" alt="">
+    </div>
+
+</section>
+
+
+<section class="sobre-equipe">
+    <h2>Conheça nossa equipe</h2>
+    <p class="paragrafo-equipe">A nossa cafetaria tem uma ótima equipa que compartilha o amor por um bom café. Vamos
+        fazê-lo sentir em casa.
+    </p>
+
+    <div class="div-equipe">
+
+        <img src="imagem/imagem homen.jpeg" alt="imagem-funcinario">
+        <div class="descicao-equipe">
             <h6>Tiago Santos</h6>
-            <p>Proprietário / Gestor <br>
-                Número de telefone: 226 106 312 <br>
-                E-mail: tiago@example.com <br></p>
+            <p>Proprietário / Gestor <br> <br>
+                Número de telefone: 226 106 312 <br> <br>
+                E-mail: tiago@example.com <br> <br></p>
         </div>
+    </div>
 
-        <div>
-            <img src="" alt="imagem-funcinario">
+    <div class="div-equipe">
+        <img src="imagem/imagem mulher.jpeg" alt="imagem-funcinario">
+        <div  class="descicao-equipe">
             <h6>Maria Cardoso</h6>
-            <p>Empregada de balcão <br>
-                Número de telefone: 258 241 824 <br>
-                E-mail: maria@example.com <br></p>
+            <p>Empregada de balcão <br> <br>
+                Número de telefone: 258 241 824 <br> <br>
+                E-mail: maria@example.com <br> <br></p>
         </div>
-    </section>
+    </div>
+</section>
+
+<footer>
+    <p>Cafetaria do Samuel / Feita com amor em 2025.</p>
+</footer>
 </body>
 
 </html>
