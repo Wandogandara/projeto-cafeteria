@@ -2,86 +2,131 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h3>Cafeteria do Wando</h3>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="Sobre Nós">Sobre Nós</a> </li>
-                    <li> <a href="O nosso menu">O nosso menu</a>
-                    <li>
-                    <li> <a href="contato">contato</a></li>
-                    <li><a href="Reservas oline">Reservas oline</a></li>
-                </ul>
-                <div class="menu-toglle">
+  <header class="hero-header">
+    <h3>Cafeteria do Wando</h3>
+    <div class="navegacao">
+      <nav class="nav-navegacao">
+        <ul class="ul-navegacao">
+          <li class="meu-item">
+            <a href="#Inicio">Inicio</a>
+          </li>
+          <li class="meu-item">
+            <a href="sobre-nos.html">Sobre Nós</a>
+           </li>
+          <li class="meu-item"> 
+            <a href="menu.html">O nosso menu</a>
+          </li>     
+          <li class="meu-item">
+             <a href="contato.html">contato</a>
+            </li>
+        </ul>
+        <div class="menu-toglle">
 
-                </div>
-            </nav>
         </div>
-        <div>
-            <h1>Cafeteria do wando</h1>
-            <p>
-                A sua cafetaria favorita da cidade</p>
-        </div>
-    </header>
+      </nav>
+    </div>
+    <div class="header-conteudo">
+      <h1>Cafeteria do wando</h1>
+      <p>
+        A sua cafetaria favorita da cidade</p>
+    </div>
+  </header>
 
-    <section id="Inicio">
-        <div class="inicio-tx">
-            <h2>Cafe com paixão</h2>
-            <p>
-                Começamos esta cafetaria com uma visão clara - compartilhar o nosso amor verdadeiro por café. Sed ut
-                perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem
-                aperiam eaque ipsa quae ab illo inventore veritatis et quasi. <br>
+  <section id="Inicio">
+    <div class="inicio-tx">
+      <h2>Cafe com paixão</h2>
+      <p>
+        Começamos esta cafetaria com uma visão clara - compartilhar o nosso amor verdadeiro por café. Sed ut
+        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem
+        aperiam eaque ipsa quae ab illo inventore veritatis et quasi. <br>
 
-                Dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor
-                sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore.
-            </p>
-        </div>
-    </section>
-
-     <!-- Botão Menu -->
-  <input type="checkbox" id="toggle-menu">
-  <label for="toggle-menu">☕ Mostrar Menu</label>
-
-  <!-- Seção do Menu -->
-  <section id="menu">
-    <h2>É hora do café</h2>
-
-    <details>
-      <summary>Cafés</summary>
-      <ul>
-        <li>Espresso — 1.50€</li>
-        <li>Cappuccino — 2.00€</li>
-        <li>Latte — 2.50€</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Doces</summary>
-      <ul>
-        <li>Pastel de Nata — 1.20€</li>
-        <li>Brownie — 2.00€</li>
-        <li>Torta de Limão — 3.00€</li>
-      </ul>
-    </details>
-
-    <details>
-      <summary>Salgados</summary>
-      <ul>
-        <li>Coxinha — 2.50€</li>
-        <li>Empada — 2.00€</li>
-      </ul>
-    </details>
+        Dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor
+        sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore.
+      </p>
+    </div>
   </section>
 
+  <section id="O nosso menu">
+    <h2>È hora do café</h2>
+
+    <!-- CAFÉ -->
+    <article class="menu-category" id="cafes">
+      <h3>Café</h3>
+      <ul>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Espresso</strong>
+            <span class="item-price">1.50€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Café latte</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Cappuccino</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Ex ea commodi consequatur quis autem</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Café com gelo</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
+      </ul>
+    </article>
+
+    <button> <a href="menu.html" target="_self">Menu</a></button>
+  </section>
+
+  <section id="sobre-nos">
+    <h2>Comece seu dia connosco</h2>
+    <p>E volte à tarde :) Os nossos funcionários amigáveis vão fazê-lo sentir em casa.</p>
+  
+    <div>
+      <img src="imagem/imagem cafeteria 1.jpeg" alt="">
+  </div>
+
+  <div>
+      <img src="imagem/imagem cafeteria2.jpeg" alt="">
+  </div>
+
+  <div>
+      <img src="imagem/imagem cafeteria3.jpeg" alt="">
+  </div>
+
+  </section>
+
+<section>
+  <h2>Esperamos pela sua visita</h2>
+
+  <div>
+    <p>2ª feira - Sábado: 8h - 18h <br>
+Domingo: 8h - 22h</p>
+<p>Cafetaria do Samuel <br>
+Rua do Ouro 797, 4150-555 Porto</p>
+  </div>
+
+  <button> <a href="contato.html">Entre em contato</a></button>
+</section>
 </body>
 
 </html>
