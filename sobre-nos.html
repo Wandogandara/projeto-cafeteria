@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetaria do Samuel</title>
+    <title>Cafetaria do Wando</title>
     <style>
         :root {
             --primary-color: #8B4513;
@@ -195,8 +195,104 @@
         footer p{
             padding-top: 25px;
             text-align: center;
+        }
 
+        /*
+        ========================================
+        🚀 REGRAS DE RESPONSIVIDADE (MEDIA QUERIES)
+        ========================================
+        */
 
+        /* -------------------------------------- */
+        /* PARA TABLETS E DISPOSITIVOS MÉDIOS (<= 768px) */
+        /* -------------------------------------- */
+        @media (max-width: 768px) {
+            /* MENU HAMBÚRGUER */
+            .nav-links {
+                display: none; /* Esconde a lista de links por padrão */
+                flex-direction: column;
+                position: absolute;
+                top: 100px; /* Posição abaixo do cabeçalho */
+                left: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.95); /* Fundo semi-transparente para o menu */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                padding: 10px 0;
+                border-top: 2px solid var(--primary-color);
+            }
+
+            .nav-links.active {
+                display: flex; /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .nav-links a {
+                padding: 10px 20px;
+                display: block;
+                font-size: 1.1rem;
+            }
+
+            .menu-toggle {
+                display: block; /* Mostra o ícone de hambúrguer */
+            }
+
+            /* LAYOUT PRINCIPAL */
+            nav {
+                padding: 15px 5%;
+            }
+
+            .header-content h1 {
+                font-size: 2.0rem;
+            }
+
+            /* SEÇÃO EQUIPE */
+            .div-equipe {
+                flex-direction: column; /* Altera o layout para vertical */
+                text-align: center;
+            }
+            
+            .div-equipe img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .descicao-equipe {
+                text-align: center;
+            }
+        }
+
+        /* -------------------------------------- */
+        /* PARA SMARTPHONES PEQUENOS (<= 480px) */
+        /* -------------------------------------- */
+        @media (max-width: 480px) {
+            body {
+                padding-top: 35vh;
+            }
+
+            header {
+                min-height: 30vh;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            /* Reduz o tamanho das imagens */
+            .imagem img {
+                width: 95%;
+            }
         }
     </style>
 </head>
@@ -218,8 +314,6 @@
             <h1>Sobre nós</h1>
         </div>
     </header>
-
-</html>
 
 <section id="Sobre Nós" class="sobre-section">
     <h2>Café com paixão</h2>
@@ -280,6 +374,32 @@
 <footer>
     <p>Cafetaria do Samuel / Feita com amor em 2025.</p>
 </footer>
+
+ 
+   <script>
+    
+    // Seleciona o botão do menu hambúrguer (☰)
+    const menuToggle = document.querySelector('.menu-toggle');
+    // Seleciona a lista de links
+    const navLinks = document.querySelector('.nav-links');
+    
+    // 1. Adiciona o evento de clique ao botão
+    menuToggle.addEventListener('click', () => {
+        // Alterna (adiciona/remove) a classe 'active' na lista de links
+        // Essa classe 'active' é a que o seu CSS deve usar para mostrar o menu
+        navLinks.classList.toggle('active');
+    });
+    
+    // 2. Fecha o menu ao clicar em um link (opcional, mas recomendado)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            // Remove a classe 'active', fechando o menu após a navegação
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
+    
+   </script>
 </body>
 
 </html>
