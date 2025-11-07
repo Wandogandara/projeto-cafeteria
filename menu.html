@@ -128,6 +128,7 @@
           text-align: center;
           margin: 15px;
           padding: 10px;
+          padding-bottom: 35px;
         }
 
         #cafes{
@@ -135,15 +136,16 @@
           padding: 15px;
         }
 
-         .menu-section ul{
-          border: solid var(--accent-color);
-        }
+         #bebidas{
+          padding: 20px;
+         }
 
         .menu-item{
           text-decoration: none;
           list-style: none;
           margin: 10px;
           padding: 10px;
+          border-bottom: solid rgb(250, 249, 245);
           
         }
 
@@ -174,15 +176,69 @@
             padding: 10px 0;
             border-top: 2px solid var(--primary-color);
           }
+           .nav-links.active {
+                display: flex; /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .nav-links a {
+                padding: 10px 20px;
+                display: block;
+                font-size: 1.1rem;
+            }
+
+            .menu-toggle {
+                display: block; /* Mostra o ícone de hambúrguer */
+            }
+
+            /* LAYOUT PRINCIPAL */
+            nav {
+                padding: 15px 5%;
+            }
+
+            .header-content h1 {
+                font-size: 2.0rem;
+            }
+        }
+
+         @media (max-width: 480px) {
+            body {
+                padding-top: 35vh;
+            }
+
+            header {
+                min-height: 30vh;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            /* Reduz o tamanho das imagens */
+            .imagem img {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
     <header class="hero-header">
         <nav>
-            <div class="logo">Cafeteria do Wando</div>
+            <div class="logo">Cafeteria do Tiago</div>
             <ul class="nav-links">
-                <li><a href="inicio.html">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="menu.html">O nosso menu</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -191,7 +247,7 @@
             <div class="menu-toggle">☰</div>
         </nav>
         <div class="header-content">
-            <h1>Sobre nós</h1>
+            <h1>Menu</h1>
         </div>
     </header>
 
@@ -299,7 +355,7 @@
     </section>
 
     <footer>
-    <p>Cafetaria do Samuel / Feita com amor em 2025.</p>
+    <p>Cafetaria do Tiago / Feita com amor em 2025.</p>
     </footer>
 
 
