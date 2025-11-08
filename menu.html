@@ -1,362 +1,369 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <style>
-       :root {
-            --primary-color: #8B4513;
-            --secondary-color: #D2691E;
-            --accent-color: #E6B17E;
-            --light-color: #F5F5DC;
-            --dark-color: #3E2723;
-            --text-color: #333333;
-            --white: #FFFFFF;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-        }
+  <style>
+    :root {
+      --primary-color: #8B4513;
+      --secondary-color: #D2691E;
+      --accent-color: #E6B17E;
+      --light-color: #F5F5DC;
+      --dark-color: #3E2723;
+      --text-color: #333333;
+      --white: #FFFFFF;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        body {
-            padding-top: 40vh;
-            /* Para compensar o header fixo */
-        }
-         header {
-            background-image: url(imagem/imagem\ lyaut.jpeg);
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            min-height: 30vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background-color: white;
-            box-shadow: var(--shadow);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: rgb(10, 10, 10) 0px 0px 15px;
-        }
+    body {
+      padding-top: 40vh;
+      /* Para compensar o header fixo */
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 5%;
-        }
+    header {
+      background-image: url(imagem/imagem\ lyaut.jpeg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: 30vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: rgb(10, 10, 10) 0px 0px 15px;
+    }
 
-        .logo {
-          font-family: cursive;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+    }
 
-        .logo span {
-            color: var(--accent-color);
-        }
+    .logo {
+      font-family: cursive;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
+    .logo span {
+      color: var(--accent-color);
+    }
 
-        .nav-links li {
-            margin-left: 30px;
-        }
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
 
-        .nav-links a {
-            font-weight: 600;
-            color: var(--dark-color);
-            text-decoration: none;
-            transition: var(--transition);
-        }
+    .nav-links li {
+      margin-left: 30px;
+    }
 
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
+    .nav-links a {
+      font-weight: 600;
+      color: var(--dark-color);
+      text-decoration: none;
+      transition: var(--transition);
+    }
 
-        .menu-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
 
-        .header-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            padding-bottom: 40px;
-        }
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
 
-        .header-content h1 {
-            color: var(--white);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            font-size: 2.5rem;
-        }
+    .header-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding-bottom: 40px;
+    }
 
-        h2 {
-            color: var(--primary-color);
-            text-align: center;
-            font-size: 2.0rem;
-            padding: 10px;
-            font-family: serif;
-        }
+    .header-content h1 {
+      color: var(--white);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-size: 2.5rem;
+    }
 
-        h1{
-          font-family: cursive;
-        }
+    h2 {
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 2.0rem;
+      padding: 10px;
+      font-family: serif;
+    }
 
-        h3{
-          color: var(--secondary-color);
-          padding: 10px;
-          font-family: cursive;
-        }
+    h1 {
+      font-family: cursive;
+    }
 
-        .menu-section{
-          text-align: center;
-          margin: 15px;
-          padding: 10px;
-          padding-bottom: 35px;
-        }
+    h3 {
+      color: var(--secondary-color);
+      padding: 10px;
+      font-family: cursive;
+    }
 
-        #cafes{
-          margin: 10px;
-          padding: 15px;
-        }
+    .menu-section {
+      text-align: center;
+      margin: 15px;
+      padding: 10px;
+      padding-bottom: 35px;
+    }
 
-         #bebidas{
-          padding: 20px;
-         }
+    #cafes {
+      margin: 10px;
+      padding: 15px;
+    }
 
-        .menu-item{
-          text-decoration: none;
-          list-style: none;
-          margin: 10px;
-          padding: 10px;
-          border-bottom: solid rgb(250, 249, 245);
-          
-        }
+    #bebidas {
+      padding: 20px;
+    }
+
+    .menu-item {
+      text-decoration: none;
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+      border-bottom: solid rgb(250, 249, 245);
+
+    }
 
 
- footer{
-            padding: 15px;
-            
-            background-color: var(--text-color);
-            color: var(--white);
-            width: 100%;
-            height: 100px;
-        }
-        footer p{
-            padding-top: 25px;
-            text-align: center;
-        }
+    footer {
+      padding: 15px;
 
-        @media (max-width: 768px) {
-          .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 100px;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 8px 16px rgba(0 0 0 0.2);
-            padding: 10px 0;
-            border-top: 2px solid var(--primary-color);
-          }
-           .nav-links.active {
-                display: flex; /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
-            }
+      background-color: var(--text-color);
+      color: var(--white);
+      width: 100%;
+      height: 100px;
+    }
 
-            .nav-links li {
-                margin: 10px 0;
-                text-align: center;
-            }
+    footer p {
+      padding-top: 25px;
+      text-align: center;
+    }
 
-            .nav-links a {
-                padding: 10px 20px;
-                display: block;
-                font-size: 1.1rem;
-            }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 8px 16px rgba(0 0 0 0.2);
+        padding: 10px 0;
+        border-top: 2px solid var(--primary-color);
+      }
 
-            .menu-toggle {
-                display: block; /* Mostra o ícone de hambúrguer */
-            }
+      .nav-links.active {
+        display: flex;
+        /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
+      }
 
-            /* LAYOUT PRINCIPAL */
-            nav {
-                padding: 15px 5%;
-            }
+      .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+      }
 
-            .header-content h1 {
-                font-size: 2.0rem;
-            }
-        }
+      .nav-links a {
+        padding: 10px 20px;
+        display: block;
+        font-size: 1.1rem;
+      }
 
-         @media (max-width: 480px) {
-            body {
-                padding-top: 35vh;
-            }
+      .menu-toggle {
+        display: block;
+        /* Mostra o ícone de hambúrguer */
+      }
 
-            header {
-                min-height: 30vh;
-            }
+      /* LAYOUT PRINCIPAL */
+      nav {
+        padding: 15px 5%;
+      }
 
-            .logo {
-                font-size: 1.5rem;
-            }
+      .header-content h1 {
+        font-size: 2.0rem;
+      }
+    }
 
-            .header-content h1 {
-                font-size: 1.8rem;
-            }
+    @media (max-width: 480px) {
+      body {
+        padding-top: 35vh;
+      }
 
-            h2 {
-                font-size: 1.5rem;
-            }
+      header {
+        min-height: 30vh;
+      }
 
-            /* Reduz o tamanho das imagens */
-            .imagem img {
-                width: 95%;
-            }
-        }
-    </style>
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .header-content h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      /* Reduz o tamanho das imagens */
+      .imagem img {
+        width: 95%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header class="hero-header">
-        <nav>
-            <div class="logo">Cafeteria do Tiago</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="menu.html">O nosso menu</a></li>
-                <li><a href="contato.html">Contato</a></li>
+  <header class="hero-header">
+    <nav>
+      <div class="logo">Cafeteria do Tiago</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="menu.html">O nosso menu</a></li>
+        <li><a href="contato.html">Contato</a></li>
 
-            </ul>
-            <div class="menu-toggle">☰</div>
-        </nav>
-        <div class="header-content">
-            <h1>Menu</h1>
-        </div>
-    </header>
-
-
-    <section id="O nosso menu" class="menu-section">
-          <!-- CAFÉ -->
-  <article class="menu-category" id="cafes">
-    <h3>Café</h3>
-    <ul>
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Espresso</strong>
-          <span class="item-price">1.50€</span> 
-        </div>
-        <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
-      </li>
-
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Café latte</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
-      </li>
-
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Cappuccino</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Ex ea commodi consequatur quis autem</p>
-      </li>
-
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Café com gelo</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
-      </li>
-    </ul>
-  </article>
-
-  <!-- BEBIDAS -->
-  <article class="menu-category" id="bebidas">
-    <h3>Bebidas</h3>
-    <ul>
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Água</strong>
-          <span class="item-price">1.50€</span>
-        </div>
-        <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
-      </li>
-
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Cerveja</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
-      </li>
-
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Vinho branco</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Ex ea commodi consequatur quis autem</p>
-      </li>
-    </ul>
-  </article>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+    <div class="header-content">
+      <h1>Menu</h1>
+    </div>
+  </header>
 
 
-  
-  <!-- SOBREMESAS -->
-  <article class="menu-category" id="sobremesas">
-    <h3>Sobremesas</h3>
-    <ul>
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Pastel de nata</strong>
-          <span class="item-price">1.50€</span>
-        </div>
-        <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
-      </li>
+  <section id="O nosso menu" class="menu-section">
+    <!-- CAFÉ -->
+    <article class="menu-category" id="cafes">
+      <h3>Café</h3>
+      <ul>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Espresso</strong>
+            <span class="item-price">1.50€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
 
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Cheesecake com creme de framboesa</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
-      </li>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Café latte</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
+        </li>
 
-      <li class="menu-item">
-        <div class="item-main">
-          <strong class="item-name">Torta de maçã com gelado</strong>
-          <span class="item-price">10€</span>
-        </div>
-        <p class="item-desc">Ex ea commodi consequatur quis autem</p>
-      </li>
-    </ul>
-  </article>
-    </section>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Cappuccino</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Ex ea commodi consequatur quis autem</p>
+        </li>
 
-    <footer>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Café com gelo</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
+      </ul>
+    </article>
+
+    <!-- BEBIDAS -->
+    <article class="menu-category" id="bebidas">
+      <h3>Bebidas</h3>
+      <ul>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Água</strong>
+            <span class="item-price">1.50€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Cerveja</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Vinho branco</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Ex ea commodi consequatur quis autem</p>
+        </li>
+      </ul>
+    </article>
+
+
+
+    <!-- SOBREMESAS -->
+    <article class="menu-category" id="sobremesas">
+      <h3>Sobremesas</h3>
+      <ul>
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Pastel de nata</strong>
+            <span class="item-price">1.50€</span>
+          </div>
+          <p class="item-desc">Porro quisquam est qui dolorem ipsum</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Cheesecake com creme de framboesa</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Et dolore magnam aliquam quaerat voluptatem</p>
+        </li>
+
+        <li class="menu-item">
+          <div class="item-main">
+            <strong class="item-name">Torta de maçã com gelado</strong>
+            <span class="item-price">10€</span>
+          </div>
+          <p class="item-desc">Ex ea commodi consequatur quis autem</p>
+        </li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
     <p>Cafetaria do Tiago / Feita com amor em 2025.</p>
-    </footer>
+  </footer>
 
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
@@ -371,7 +378,8 @@
         navlinks.classList.remove('active')
       })
     })
-</script>
-    
-    </body>
+  </script>
+
+</body>
+
 </html>

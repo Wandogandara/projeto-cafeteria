@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
-         :root {
+        :root {
             --primary-color: #8B4513;
             --secondary-color: #D2691E;
             --accent-color: #E6B17E;
@@ -19,7 +19,7 @@
             --transition: all 0.3s ease;
         }
 
-         * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -30,11 +30,209 @@
             padding-top: 40vh;
             /* Para compensar o header fixo */
         }
+
+        header {
+            background-image: url(imagem/imagem\ lyaut.jpeg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 30vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: rgb(10, 10, 10) 0px 0px 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .logo {
+            font-family: cursive;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding-bottom: 40px;
+        }
+
+        .header-content h1 {
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2.0rem;
+            padding: 10px;
+            font-family: serif;
+        }
+
+        h1 {
+            font-family: cursive;
+        }
+
+        .contato {
+            margin: 15px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .div-contato {
+            display: flex;
+        }
+
+        iframe {
+            width: 90%;
+            height: 90;
+            border-radius: 10px;
+
+        }
+
+        .div-informaçao {
+            display: block;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .div-informaçao h5 {
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .div-informaçao p {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        i {
+            padding: 5px;
+            color: #D2691E;
+        }
+
+        footer {
+            padding: 15px;
+
+            background-color: var(--text-color);
+            color: var(--white);
+            width: 100%;
+            height: 100px;
+        }
+
+        footer p {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.93);
+                box-shadow: 0 8px 16px rgba(0 0 0 0.2);
+                padding: 10px 0;
+                border-top: 2px solid var(--primary-color);
+            }
+              .nav-links.active {
+        display: flex;
+        /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .nav-links a {
+        padding: 10px 20px;
+        display: block;
+        font-size: 1.1rem;
+      }
+
+      .menu-toggle {
+        display: block;
+        /* Mostra o ícone de hambúrguer */
+      }
+
+      /* LAYOUT PRINCIPAL */
+      nav {
+        padding: 15px 5%;
+      }
+
+      .header-content h1 {
+        font-size: 2.0rem;
+      }
+
+      .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .div-contato{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+      }
+        }
     </style>
 </head>
 
 <body>
-     <header class="hero-header">
+    <header class="hero-header">
         <nav>
             <div class="logo">Cafeteria do Tiago</div>
             <ul class="nav-links">
@@ -51,25 +249,31 @@
         </div>
     </header>
 
-    <section>
-        <div>
+    <section class="contato">
+        <div class="div-contato">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44020.33517646368!2d-46.51507476214342!3d-12.785996133873605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1762385964082!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <h5>Cafeteria do Tiago</h5>
-            <p>Rua do Ouro 797, 4150-555 Porto</p>
+            <div class="div-informaçao">
+                <h5> <i class="bi bi-geo-alt-fill"></i>Cafeteria do Tiago</h5>
+                <p> Rua do Ouro 797, 4150-555 Porto</p>
 
-            <h5>Horários</h5>
-            <p>2ª feira - Sábado: 8h - 18h
-                Domingo: 8h - 22h</p>
+                <h5> <i class="bi bi-clock-history"></i>Horários</h5>
+                <p>2ª feira - Sábado: 8h - 18h
+                    Domingo: 8h - 22h</p>
+                <h5> <i class="bi bi-telephone"></i>226 106 312</h5>
 
-            <p>226 106 312</p>
+                <h5> <i class="bi bi-envelope"></i>demo@webnode.com</h5>
 
-            <p>demo@webnode.com</p>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <p>Cafetaria do Tiago / Feita com amor em 2025.</p>
+    </footer>
 </body>
 
 </html>
