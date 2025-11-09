@@ -28,6 +28,7 @@
 
         body {
             padding-top: 40vh;
+            
             /* Para compensar o header fixo */
         }
 
@@ -160,6 +161,47 @@
             color: #D2691E;
         }
 
+        .floating-contact-icon {
+    position: fixed; 
+    bottom: 100px; 
+    right: 30px;
+    background-color: #06f341; 
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 60px; 
+    font-size: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: flutuando 3s ease-in-out infinite;
+}
+
+
+       @keyframes flutuando {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+.floating-contact-icon i{
+    color: black;
+}
+
+
+.floating-contact-icon:hover {
+    background-color: #46a152;
+    transform: scale(1.1); 
+}
+
         footer {
             padding: 15px;
 
@@ -280,7 +322,7 @@
             <div class="menu-toggle">☰</div>
         </nav>
         <div class="header-content">
-            <h1>Menu</h1>
+            <h1>Contato</h1>
         </div>
     </header>
 
@@ -303,6 +345,18 @@
                 <h5> <i class="bi bi-envelope"></i>demo@webnode.com</h5>
 
             </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div>
+            <a href="https://wa.me/5511999998888?text=Olá!%20Gostaria%20de%20mais%20informações." 
+       target="_blank" 
+       class="floating-contact-icon" 
+       title="Fale conosco pelo WhatsApp">
+       <i class="bi bi-whatsapp"></i>
+    </a>
         </div>
     </section>
 

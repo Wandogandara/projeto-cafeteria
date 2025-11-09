@@ -199,5 +199,192 @@ padding: 10px;
 .botao-menu a:hover{
   color: var(--secondary-color);
 }
+
+#sobre-nos{
+  margin: 20px;
+ padding: 15px;
+  
+}
+
+#sobre-nos p{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  text-align: center;
+  margin: 15px;
+  
+}
+
+.imagem{
+  display: inline;
+   
+}
+
+.imagem img{
+  margin: 20px 10px 5px 10px;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.93) 0px 4px 12px;
+  animation: flutuando 5s ease-in-out infinite;
+}
+
+/* Ação para o efeito de flutuação */
+@keyframes flutuando {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-5px); /* Move a imagem 15px para cima */
+  }
+  100% {
+    transform: translateY(0); /* Retorna à posição inicial */
+  }
+}
+
+.section-contato{
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.div-informaçao{
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding: 10px;
+  margin: 10px;
+}
+
+  .div-informaçao h5 {
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .div-informaçao p {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        i {
+            padding: 5px;
+            color: #D2691E;
+        }
+
+        .botao-contato{
+          padding: 10px 15px;
+          background-color: var(--accent-color);
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+
+        .botao-contato a{
+          text-decoration: none;
+          color: var(--text-color);
+          font-weight: 600;
+          transition: var(--secondary-color);
+
+        }
+        .botao-contato a:hover{
+          color: var(--secondary-color);
+        }
+
+          footer {
+            padding: 15px;
+
+            background-color: var(--text-color);
+            color: var(--white);
+            width: 100%;
+            height: 100px;
+        }
+
+        footer p {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+          @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0px;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.93);
+                box-shadow: 0 8px 16px rgba(0 0 0 0.2);
+                padding: 10px 0;
+             
+            }
+              .nav-links.active {
+        display: flex;
+        /* Mostra a lista quando a classe 'active' é adicionada pelo JS */
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .nav-links a {
+        padding: 10px 20px;
+        display: block;
+        font-size: 1.1rem;
+      }
+
+      .menu-toggle {
+        display: block;
+        /* Mostra o ícone de hambúrguer */
+      }
+
+      /* LAYOUT PRINCIPAL */
+      nav {
+        padding: 15px 5%;
+      }
+
+      .header-content h1 {
+        font-size: 2.0rem;
+      }
+      .header-content p{
+        font-size: 1.0rem;
+      }
+
+      .menu-category{
+        font-size: 30px;
+      }
+      .imagem img{
+        width: 80%;
+        height: 80%;
+      }
+
+    }
+
+     @media (max-width: 480px) {
+      body {
+        padding-top: 35vh;
+      }
+
+      header {
+        min-height: 30vh;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .header-content h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      /* Reduz o tamanho das imagens */
+      .imagem img {
+        width: 95%;
+      }
+    }
  
 
